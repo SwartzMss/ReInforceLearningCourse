@@ -20,10 +20,9 @@
 
 ### 更新规则
 
-每次获得奖励后，对被选择臂的奖励均值进行更新，更新公式采用增量更新方式：
-$$
-\text{new\_estimate} = \text{old\_estimate} + \frac{\text{reward} - \text{old\_estimate}}{\text{count}}
-$$
+每次获得奖励后，对被选择臂的奖励均值进行更新，更新公式采用增量更新方式：  
+  **new_estimate = old_estimate + (reward - old_estimate) / count**
+
 **参数说明：**
 
 - **new_estimate**：更新后的奖励均值估计，即在本次尝试后得到的新估计值。
