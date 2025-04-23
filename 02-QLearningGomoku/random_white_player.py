@@ -19,7 +19,7 @@ logging.basicConfig(
 class RandomWhitePlayer:
     def __init__(self, board_size: int = 8):
         self.board_size = board_size
-        self.color = 2  # 白子
+        self.color = 1  # 白子
         self.base_url = "http://localhost:8080"
         logging.info(f"初始化随机白子玩家: 棋盘大小={board_size}")
     
